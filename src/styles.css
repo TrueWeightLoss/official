@@ -1,0 +1,450 @@
+.App {
+  font-family: sans-serif;
+}
+body {
+  margin: 0px;
+}
+.header {
+  width: 100%;
+  padding: 5px;
+  min-height: 75px;
+  border-bottom: 1px #fff solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px -2px 10px rgb(0 0 0 / 15%);
+  top: 0px;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  padding: 20px;
+}
+
+.logo img {
+  min-width: 150px;
+  max-width: 150px;
+}
+.qiracontainer {
+  margin-top: 85px;
+}
+.banner {
+  font-size: 20px;
+  color: #0c2358f5;
+  text-align: center;
+  padding: 20px;
+  font-family: Glass Antiqua, "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+.banner::before {
+  content: "~";
+  color: #3c61e7;
+}
+.banner::after {
+  content: "~";
+  color: #3c61e7;
+}
+.banner .author {
+  font-size: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.grid .row {
+  margin: 10px;
+
+  padding: 10px;
+}
+
+.grid .main {
+  width: 100%;
+
+  margin-left: calc(100% - 85%);
+  margin-right: calc(100% - 70%);
+  border-right: 1px solid rgba(230, 230, 230, 1);
+  border-left: 1px solid rgba(230, 230, 230, 1);
+}
+
+.grid .row .banner {
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+}
+
+.grid .row .medias {
+  padding: 10px;
+  text-align: left;
+}
+.fixed {
+  position: fixed;
+}
+#right {
+  right: 0px;
+  min-width: 25%;
+}
+.left {
+  height: 100%; /* 100% Full-height */
+  max-width: calc(100% - 90%); /* 0 width - change this with JavaScript */
+
+  left: 0;
+
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s;
+}
+
+.menus {
+  background: 0px center;
+  padding: 10px;
+  border-color: rgb(117, 117, 117);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 99em;
+  box-sizing: border-box;
+  line-height: 20px;
+  display: inline-block;
+  color: rgba(41, 41, 41, 1);
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  min-width: 100%;
+  margin-bottom: 10px;
+}
+
+.card .title {
+  font-size: 4vh;
+  padding-left: 40px;
+  word-break: break-word;
+  padding-right: 20px;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.card .datemodified {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  font-size: 12px;
+  background-color: #3862b938;
+  width: fit-content;
+  color: #2430b79e;
+  border-radius: 20px;
+  border: 1px #305dc75e solid;
+}
+.card .desc {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vh;
+  padding-left: 40px;
+  word-break: break-all;
+  padding-right: 20px;
+  padding-top: 10px;
+  max-height: 7vh;
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  min-height: 180px;
+  max-height: 180px;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-height: fit-content;
+  align-items: center;
+  margin-top: 10px;
+}
+.card .picture {
+  display: flex;
+  align-items: center;
+
+  border-radius: 20px;
+}
+.card img {
+  margin: 0px auto;
+  height: 100px;
+
+  border-radius: 20px;
+  box-shadow: 5.5px 6.7px 5.3px -11px rgba(0, 0, 0, 0.036),
+    18.3px 22.3px 17.9px -11px rgba(0, 0, 0, 0.054),
+    82px 100px 80px -11px rgba(0, 0, 0, 0.09);
+}
+
+.card sub {
+  font-size: 9px;
+}
+
+@media (max-width: 800px) {
+  .grid .main {
+    width: 100%;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    border-right: 1px solid rgba(230, 230, 230, 1);
+    border-left: 1px solid rgba(230, 230, 230, 1);
+  }
+  .setmargin {
+    margin-left: 200px !important;
+  }
+
+  .right {
+    right: 0px;
+  }
+  .card img {
+    margin: 0px auto;
+    height: 100px;
+    box-shadow: 9px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    border-radius: 20px;
+  }
+  .card .title {
+    font-size: 20px;
+
+    padding-left: 10px;
+    word-break: break-all;
+    padding-right: 20px;
+    font-weight: 600;
+  }
+
+  .card .datemodified {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    background-color: #3862b938;
+    width: fit-content;
+    color: #2430b79e;
+    border-radius: 20px;
+    border: 1px #305dc75e solid;
+  }
+
+  .card .desc {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 10px;
+    padding-left: 10px;
+    word-break: break-all;
+    padding-right: 20px;
+    font-weight: 100;
+    padding-top: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+.imgcontainer {
+  padding: 20px;
+  position: relative;
+}
+
+#blobSvg {
+  z-index: -1;
+  position: absolute;
+  width: 150px;
+  top: 0px;
+  left: 0px;
+  height: 150px;
+  /* width: 150px; */
+  transform: scale(1.2);
+  padding-bottom: 30px;
+}
+.wrappertext {
+  overflow: none;
+}
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.linear-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 1000px 104px;
+  height: 338px;
+  position: relative;
+  overflow: hidden;
+}
+
+.black {
+  border-color: rgb(25, 25, 25);
+  background: rgb(25, 25, 25);
+
+  color: white;
+}
+.containerright {
+  width: 100%;
+  display: flex;
+}
+.notify {
+  background: rgb(232 199 39 / 84%);
+  border-radius: 10px;
+  border: 1px #bfbeb2 solid;
+  padding: 20px;
+  min-width: calc(100% - 20%);
+  line-height: 30px;
+}
+
+.notify .title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+.notify .points {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 300;
+  list-style-type: none;
+}
+
+.notify .menus {
+  margin-top: 10px;
+}
+
+.left .menus[id="Trending"] ::before {
+  content: " 🔥‍";
+  color: rgb(225, 48, 48) !important;
+}
+
+.menus[id="Trending"] {
+  position: sticky;
+  top: 0;
+}
+
+.banneratter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  /*     
+    background: linear-gradient(235deg, #BABC4A 0%, #000000 100%), linear-gradient(235deg, #0026AC 0%, #282534 100%), linear-gradient(235deg, #00FFD1 0%, #000000 100%), radial-gradient(120% 185% at 25% -25%, #EEEEEE 0%, #EEEEEE 40%, #7971EA calc(40% + 1px), #7971EA 50%, #393E46 calc(50% + 1px), #393E46 70%, #222831 calc(70% + 1px), #222831 100%), radial-gradient(70% 140% at 90% 10%, #F5F5C6 0%, #F5F5C6 30%, #7DA87B calc(30% + 1px), #7DA87B 60%, #326765 calc(60% + 1px), #326765 80%, #27253D calc(80% + 1px), #27253D 100%);
+    background-blend-mode: overlay, lighten, overlay, color-burn, normal;
+     */
+  min-height: 150px;
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+
+  background: linear-gradient(126.95deg, #000000 0%, #f9ffb1 100%),
+    radial-gradient(91.23% 100% at 50% 100%, #be002e 0%, #6100ff 100%),
+    linear-gradient(307.27deg, #1dac92 0.37%, #2800c6 100%),
+    radial-gradient(
+      100% 140% at 100% 0%,
+      #eaff6b 0%,
+      #006c7a 57.29%,
+      #2200aa 100%
+    );
+  background-blend-mode: overlay, difference, difference, normal;
+}
+
+.banneratter .Stackup {
+  line-height: 30px;
+  width: calc(100% - 40px);
+}
+.banneratter .Stackup .maintitle {
+  font-family: "Frank Ruhl Libre", "Glass Antiqua", Cambria, Cochin, Georgia,
+    Times, "Times New Roman", serif;
+
+  font-weight: 600;
+  font-size: 2em;
+  padding-bottom: 50px;
+
+  display: flex;
+}
+
+.banneratter .Stackup .buttonarea {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: fit-content;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-content: center;
+  display: none;
+}
+.banneratter .Stackup .buttonarea::after {
+  content: url("https://i.ibb.co/30RHw2F/Hnet-com-image-1.png");
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.banneratter .picarea {
+  background-color: rgba(255, 255, 255, 0.192);
+  border-radius: 50px;
+  backdrop-filter: blur(15);
+}
+.banneratter .picarea img {
+  width: 100px;
+  filter: invert(1);
+}
+
+.banneratter ~ .parentCard:hover {
+  background: #e0d9e445;
+
+  box-shadow: 0px 0px 2px 0px #acb0b06e;
+  cursor: pointer;
+}
+
+.bigicon {
+  display: none;
+  font-size: 4vh;
+  margin-left: 10px;
+}
+@media (max-width: 800px) {
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .bigicon {
+    display: block;
+    font-size: 4vh;
+    margin-left: 10px;
+  }
+  .blockx {
+    display: block;
+
+    min-width: 120px;
+    transition: min-width 10s;
+  }
+}
+.noblog {
+  width: 100%;
+}
