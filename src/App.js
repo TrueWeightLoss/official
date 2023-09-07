@@ -8,7 +8,7 @@ import Trending from "./components/trending";
 import Tech from "./components/tech";
 import LeftButtons from "./components/leftbuttons";
 import { sidebtns } from "./sidebuttons";
-import Logo from "./images/logo"
+import logo from './images/logo.svg';
 var res = "";
 
 export default function App() {
@@ -38,7 +38,7 @@ export default function App() {
         </div>
         <div className="logo">
           <img
-            src={Logo}
+            src={logo}
             alt="logo"
           />
         </div>
