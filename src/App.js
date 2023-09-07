@@ -8,6 +8,7 @@ import Trending from "./components/trending";
 import Tech from "./components/tech";
 import LeftButtons from "./components/leftbuttons";
 import { sidebtns } from "./sidebuttons";
+import Logo from "./images/logo"
 var res = "";
 
 export default function App() {
@@ -37,7 +38,7 @@ export default function App() {
         </div>
         <div className="logo">
           <img
-            src="https://anonpe.com/qirapages_x/img/logo_black.svg"
+            src={Logo}
             alt="logo"
           />
         </div>
