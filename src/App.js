@@ -8,7 +8,7 @@ import Trending from "./components/trending";
 import Tech from "./components/tech";
 import LeftButtons from "./components/leftbuttons";
 import { sidebtns } from "./sidebuttons";
-import logo from './images/logo.svg';
+import logo from './images/logo_with_heart.svg';
 var res = "";
 
 export default function App() {
@@ -40,6 +40,7 @@ export default function App() {
           <img
             src={logo}
             alt="logo"
+
           />
         </div>
         <div className="links">{/* Login */}</div>
@@ -57,7 +58,7 @@ export default function App() {
             <div className="banneratter">
               <div className="Stackup">
                 <div className="maintitle">
-                  Only platform to write premium articles.
+                More than a journey, it's your personal odyssey to wellness
                 </div>
 
                 <div className="buttonarea">Watch Video</div>
@@ -65,7 +66,7 @@ export default function App() {
 
               <div className="picarea">
                 <img
-                  src="https://avatars.dicebear.com/api/croodles/your-sdasdasdasdasdasdasaasdasdasasddsaasdaadasdasdsadasasdasdasdasadasdasdsad-asdasdsadseedasdasdasdasdasdasdasdasdadad.svg"
+                  src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix"
                   name="doodle1"
                   alt="doodle1"
                 />

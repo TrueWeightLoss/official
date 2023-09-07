@@ -27,11 +27,11 @@ body {
 }
 
 .logo img {
-  min-width: 150px;
-  max-width: 150px;
+  min-width: 250px;
+  max-width: 250px;
 }
 .qiracontainer {
-  margin-top: 85px;
+  margin-top: 120px;
 }
 .banner {
   font-size: 20px;
@@ -357,16 +357,8 @@ a:hover {
   color: white;
   padding: 20px;
 
-  background: linear-gradient(126.95deg, #000000 0%, #f9ffb1 100%),
-    radial-gradient(91.23% 100% at 50% 100%, #be002e 0%, #6100ff 100%),
-    linear-gradient(307.27deg, #1dac92 0.37%, #2800c6 100%),
-    radial-gradient(
-      100% 140% at 100% 0%,
-      #eaff6b 0%,
-      #006c7a 57.29%,
-      #2200aa 100%
-    );
-  background-blend-mode: overlay, difference, difference, normal;
+  background: linear-gradient(301.28deg, #630000 0%, #000000 100%), linear-gradient(121.28deg, #207A00 0%, #950000 100%), linear-gradient(238.72deg, #FFB800 0%, #000000 100%), linear-gradient(238.72deg, #00D1FF 0%, #A80000 100%), linear-gradient(58.72deg, #B80000 0%, #1B00C2 100%), linear-gradient(125.95deg, #00E0FF 10.95%, #87009D 100%), linear-gradient(263.7deg, #B60000 3.43%, #B100A0 96.57%), linear-gradient(320.54deg, #800000 0%, #00C2FF 72.37%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
+background-blend-mode: overlay, color-dodge, difference, lighten, difference, color-dodge, difference, difference, normal;
 }
 
 .banneratter .Stackup {
@@ -405,8 +397,8 @@ a:hover {
   margin-top: 2px;
 }
 .banneratter .picarea {
-  background-color: rgba(255, 255, 255, 0.192);
-  border-radius: 50px;
+ 
+  padding:30px;
   backdrop-filter: blur(15);
 }
 .banneratter .picarea img {
