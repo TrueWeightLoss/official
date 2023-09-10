@@ -22,7 +22,7 @@ const Trending = () => {
           // axios returns API response body in .data
         });
     } else {
-      axios.get("https://anonpe.com/api/sampleapi.php").then((response) => {
+      axios.get("https://323pnbyhfb.execute-api.us-east-2.amazonaws.com/default/posts/").then((response) => {
         console.log(response.data);
         setLoading(false);
         setResult(response.data);
