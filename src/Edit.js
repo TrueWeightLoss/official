@@ -62,7 +62,7 @@ function Edit() {
         const jsonData = JSON.stringify(savedData);
 
         // Send the JSON data to a server using the fetch function
-        fetch('https://wleqauwfyf.execute-api.us-east-2.amazonaws.com/default/addPostForTrueWeightLossJourney', {
+        fetch('https://323pnbyhfb.execute-api.us-east-2.amazonaws.com/default', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
