@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
-
+import Edit from "./Edit";
 import App from "./App";
 import {
   BrowserRouter as Router,
@@ -14,7 +14,10 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
     <Router>
-      <App />
+    <Routes>
+    <Route path="/" element={<App />} />
+    <Route path="/edit" element={<Edit />} />
+      </Routes>
     </Router>
   </StrictMode>,
   rootElement

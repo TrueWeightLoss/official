@@ -8,7 +8,8 @@ import Trending from "./components/trending";
 import Tech from "./components/tech";
 import LeftButtons from "./components/leftbuttons";
 import { sidebtns } from "./sidebuttons";
-import logo from './images/logo_with_heart.svg';
+import logo from './images/weightlosslogo.svg';
+import girl from './images/girl.svg';
 var res = "";
 
 export default function App() {
@@ -66,7 +67,7 @@ export default function App() {
 
               <div className="picarea">
                 <img
-                  src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix"
+                  src={girl}
                   name="doodle1"
                   alt="doodle1"
                 />
